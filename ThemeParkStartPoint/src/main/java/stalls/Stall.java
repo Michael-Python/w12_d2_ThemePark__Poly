@@ -1,6 +1,8 @@
 package stalls;
 
-public abstract class Stall {
+import behaviours.IReviewed;
+
+public abstract class Stall implements IReviewed{
 
     private String name;
     private String ownerName;
@@ -23,4 +25,9 @@ public abstract class Stall {
     public ParkingSpot getParkingSpot() {
         return parkingSpot;
     }
+
+    public int getRating() {
+        return 0;
+    }
+
 }
